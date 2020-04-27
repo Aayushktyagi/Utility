@@ -14,4 +14,5 @@ Small utility scripts
    9. rename_and_move.py:File to rename files with uuid and copy into another folder
    10. rotate_image.py:rotate image and rotate coordinates
 3. Remove mask:check files in train remove files from annotation if file not present in images
+4. Readimage_createcsv.py: read image from folder, create csv file with imagename and label(folder name)
   
