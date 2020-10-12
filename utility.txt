@@ -2,6 +2,8 @@
 mv `ls | head -1800` ../subfolder/
 #move file path to txt file
 ls *.ext > file_name.txt
+#combine multiple .txt files
+cat file1.txt file2.txt > file3.txt
 #run jupyter at gcp
 jupyter notebook --ip=0.0.0.0 --port=8081 --no-browser --allow-root&
 # change file extension
