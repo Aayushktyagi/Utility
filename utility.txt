@@ -10,3 +10,5 @@ jupyter notebook --ip=0.0.0.0 --port=8081 --no-browser --allow-root&
 for f in *.txt; do mv -- "$f" "${f%.txt}.text"; done
 # change image format
 for f in *.png; do convert -- "$f" "${f%.png}.jpg"; done
+# Transfer data from local system to server
+scp -r Filename username@ip:location/to/destination/
