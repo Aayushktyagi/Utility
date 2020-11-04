@@ -12,3 +12,5 @@ for f in *.txt; do mv -- "$f" "${f%.txt}.text"; done
 for f in *.png; do convert -- "$f" "${f%.png}.jpg"; done
 # Transfer data from local system to server
 scp -r Filename username@ip:location/to/destination/
+# Transfer data from server to local system from local system
+scp -r -P Port usename@ip:/location/on/server /destincation/folder/
