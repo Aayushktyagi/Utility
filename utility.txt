@@ -14,3 +14,5 @@ for f in *.png; do convert -- "$f" "${f%.png}.jpg"; done
 scp -r Filename username@ip:location/to/destination/
 # Transfer data from server to local system from local system
 scp -r -P Port usename@ip:/location/on/server /destincation/folder/
+# Kill all python process 
+pkill -9 python
