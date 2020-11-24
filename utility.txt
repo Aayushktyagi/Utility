@@ -16,3 +16,6 @@ scp -r Filename username@ip:location/to/destination/
 scp -r -P Port usename@ip:/location/on/server /destincation/folder/
 # Kill all python process 
 pkill -9 python
+# regrex to convert str type list to list
+res = val.strip('][').split(', ')
+
