@@ -18,4 +18,6 @@ scp -r -P Port usename@ip:/location/on/server /destincation/folder/
 pkill -9 python
 # regrex to convert str type list to list
 res = val.strip('][').split(', ')
+# unzip all .gz file in the sub-directories
+gzip -d $(find ./ -type f -name '*.gz')
 
