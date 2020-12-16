@@ -20,4 +20,6 @@ pkill -9 python
 res = val.strip('][').split(', ')
 # unzip all .gz file in the sub-directories
 gzip -d $(find ./ -type f -name '*.gz')
+# merge 2 pandas dataframe based on columns 
+pd.merge(df1, df2, how='inner', left_on='A', right_on='Match')
 
