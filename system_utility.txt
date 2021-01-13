@@ -1,25 +1,31 @@
 #Move n top images from one folder to another 
 mv `ls | head -1800` ../subfolder/
+
 #move file path to txt file
 ls *.ext > file_name.txt
+
 #combine multiple .txt files
 cat file1.txt file2.txt > file3.txt
+
 #run jupyter at gcp
 jupyter notebook --ip=0.0.0.0 --port=8081 --no-browser --allow-root&
+
 # change file extension
 for f in *.txt; do mv -- "$f" "${f%.txt}.text"; done
+
 # change image format
 for f in *.png; do convert -- "$f" "${f%.png}.jpg"; done
+
 # Transfer data from local system to server
 scp -r Filename username@ip:location/to/destination/
+
 # Transfer data from server to local system from local system
 scp -r -P Port usename@ip:/location/on/server /destincation/folder/
-# Kill all python process 
-pkill -9 python
+
 # regrex to convert str type list to list
 res = val.strip('][').split(', ')
+
 # unzip all .gz file in the sub-directories
 gzip -d $(find ./ -type f -name '*.gz')
-# merge 2 pandas dataframe based on columns 
-pd.merge(df1, df2, how='inner', left_on='A', right_on='Match')
+
 
