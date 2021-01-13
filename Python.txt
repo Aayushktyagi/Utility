@@ -1,0 +1,10 @@
+# Pandas 
+## count number of values in each class 
+dataframe['column_name'].value_counts().to_list()
+
+## merge 2 pandas dataframe based on columns 
+pd.merge(df1, df2, how='inner', left_on='df1.A', right_on='df2.B')
+
+Python
+# Kill all python process 
+pkill -9 python
