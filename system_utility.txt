@@ -28,4 +28,10 @@ res = val.strip('][').split(', ')
 # unzip all .gz file in the sub-directories
 gzip -d $(find ./ -type f -name '*.gz')
 
+# set line number in vim
+set nu
+
+# Unset line number in vim 
+set nonu
+
 
